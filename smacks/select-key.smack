@@ -5,7 +5,7 @@ client "admin"
  host "localhost";
  db "test";
  pass "";
- socket "/tmp/mysql.sock"; // this only applies to MySQL and is
+ socket "/var/lib/mysql/mysql.sock"; // this only applies to MySQL and is
 // ignored for PostgreSQL
 }
 
@@ -65,7 +65,7 @@ client "smacker1"
  pass ""; // use this password
  host "localhost"; // connect to this host
  db "test"; // switch to this database
- socket "/tmp/mysql.sock"; // this only applies to MySQL and is
+ socket "/var/lib/mysql/mysql.sock"; // this only applies to MySQL and is
 // ignored for PostgreSQL
  query_barrel "2 select_by_username"; // on each round,
 // run select_by_username query 2 times
