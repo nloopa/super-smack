@@ -1562,13 +1562,13 @@ else
 echo "${ECHO_T}missing" >&6
 fi
 
-echo "$as_me:$LINENO: checking for working automake" >&5
-echo $ECHO_N "checking for working automake... $ECHO_C" >&6
+echo "$as_me:$LINENO: checking for working automake-1.4" >&5
+echo $ECHO_N "checking for working automake-1.4... $ECHO_C" >&6
 # Run test in a subshell; some versions of sh will print an error if
 # an executable is not found, even if stderr is redirected.
 # Redirect stdin to placate older versions of autoconf.  Sigh.
-if (automake --version) < /dev/null > /dev/null 2>&1; then
-   AUTOMAKE=automake
+if (automake-1.4 --version) < /dev/null > /dev/null 2>&1; then
+   AUTOMAKE=automake-1.4
    echo "$as_me:$LINENO: result: found" >&5
 echo "${ECHO_T}found" >&6
 else
