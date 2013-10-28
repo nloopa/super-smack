@@ -2,6 +2,7 @@ Run on TILE platforms
 ---------------------
 Step 1: Build
 	./configure --with-mysql --with-mysql-lib=/usr/lib64
+	make clean
 	make
 	make install
 
@@ -11,7 +12,7 @@ Step 2: Generate data before test
 Step 3: Start mysql
 	service mysqld start
 
-Step4: Run test
+Step 4: Run test
 	/usr/local/bin/super-smack -d mysql /usr/share/smacks/select-key.smack 10 100
 	/usr/local/bin/super-smack -d mysql /usr/share/smacks/update-select.smack 10 100
 
